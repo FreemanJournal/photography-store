@@ -69,15 +69,14 @@ header {
   cursor: pointer;
 }
 
-.hero_button:hover, .product_button:hover {
-  background: #1b97f5b2;
-}
-
-.hero_button span, .product_button span {
+.hero_button:hover span, .product_button:hover span{
+  display: block;
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
-  display: block;
+
 }
+
+
 
 @-webkit-keyframes bounce {
   0%,
@@ -240,6 +239,9 @@ footer section .social_link a:nth-child(2n+1):hover {
 /*===================================== Media quiery Start =======================================*/
 
 
+
+/*===================================== Teblet Screen =======================================*/
+
 @media (min-width: 641px) {
   main {
     width: 80%;
@@ -266,6 +268,10 @@ footer section .social_link a:nth-child(2n+1):hover {
         grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+/*===================================== Desktop Screen =======================================*/
+
 
 @media (min-width: 1008px) {
   .hero {
