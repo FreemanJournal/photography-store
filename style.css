@@ -6,11 +6,11 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   background: #f7f6ff;
   color: #333c41;
 }
@@ -25,38 +25,42 @@ header {
 }
 /*=====================================Global Styles End =======================================*/
 
-
-
 /*===================================== Hero section Start =======================================*/
 
 .hero {
   margin-bottom: 5em;
 }
 
-.hero_text h1, .hire_text h1 {
+.hero_text h1,
+.hire_text h1 {
   font-size: 4.5ch;
   color: #333c41;
 }
 
-.hero_text h2, .hire_text h2 {
+.hero_text h2,
+.hire_text h2 {
   font-size: 4ch;
 }
 
-.hero_text p, .hire_text p {
+.hero_text p,
+.hire_text p {
   font-size: 2ch;
   text-align: justify;
   margin: 1.4em 0;
 }
 
-.hero_img, .hire_img {
+.hero_img,
+.hire_img {
   margin: 2em 0;
 }
 
-.hero_img img, .hire_img img {
+.hero_img img,
+.hire_img img {
   width: 100%;
 }
 
-.hero_button, .product_button {
+.hero_button,
+.product_button {
   font-size: 1.7ch;
   padding: 0.5em 2em;
   border: 0;
@@ -69,28 +73,30 @@ header {
   cursor: pointer;
 }
 
-.hero_button:hover span, .product_button:hover span{
+.hero_button:hover,
+.product_button:hover {
+  background: #242b2e;
+}
+.hero_button:hover span,
+.product_button:hover span {
   display: block;
   -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
-
+  animation: bounce 1s infinite;
 }
-
-
 
 @-webkit-keyframes bounce {
   0%,
   100% {
     -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
+    transform: translateX(-5%);
     -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
     -webkit-transform: translateX(5%);
-            transform: translateX(5%);
+    transform: translateX(5%);
     -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 
@@ -98,24 +104,23 @@ header {
   0%,
   100% {
     -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
+    transform: translateX(-5%);
     -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
     -webkit-transform: translateX(5%);
-            transform: translateX(5%);
+    transform: translateX(5%);
     -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 
-.hero_button i, .product_button i {
+.hero_button i,
+.product_button i {
   margin-left: 1em;
 }
 /*===================================== Hero section End =======================================*/
-
-
 
 /*===================================== Product section Start =======================================*/
 
@@ -128,8 +133,8 @@ header {
   display: -ms-grid;
   display: grid;
   gap: 1em;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-columns: (1fr) [1];
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .product_card {
@@ -178,7 +183,6 @@ header {
 }
 /*===================================== Product section End =======================================*/
 
-
 /*===================================== Hire section Start =======================================*/
 
 .hire {
@@ -190,13 +194,10 @@ header {
 }
 /*===================================== Hire section End =======================================*/
 
-
-
 /*===================================== Footer section Start =======================================*/
 
-
 footer {
-  padding:2em 0 1em 0;
+  padding: 2em 0 1em 0;
   background: #000;
   color: #f7f6ff;
   text-align: center;
@@ -220,8 +221,8 @@ footer section .social_link {
 
 footer section .social_link a {
   cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   color: #f7f6ff;
   text-decoration: none;
 }
@@ -230,15 +231,12 @@ footer section .social_link a:nth-child(2n):hover {
   color: #f51b26;
 }
 
-footer section .social_link a:nth-child(2n+1):hover {
+footer section .social_link a:nth-child(2n + 1):hover {
   color: #1b98f5;
 }
 /*===================================== Footer section End =======================================*/
 
-
 /*===================================== Media quiery Start =======================================*/
-
-
 
 /*===================================== Teblet Screen =======================================*/
 
@@ -247,31 +245,31 @@ footer section .social_link a:nth-child(2n+1):hover {
     width: 80%;
     margin: 0 auto;
   }
-  .hero_text, .hire_text {
+  .hero_text,
+  .hire_text {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
-  .hero_text button, .hire_text button {
+  .hero_text button,
+  .hire_text button {
     width: 40%;
   }
   .product_list {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-
 /*===================================== Desktop Screen =======================================*/
-
 
 @media (min-width: 1008px) {
   .hero {
@@ -280,8 +278,8 @@ footer section .social_link a:nth-child(2n+1):hover {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .hire {
     display: -webkit-box;
@@ -289,15 +287,17 @@ footer section .social_link a:nth-child(2n+1):hover {
     display: flex;
     gap: 4em;
   }
-  .hero_text, .hire_text {
+  .hero_text,
+  .hire_text {
     width: 50%;
   }
-  .hero_img, .hire_img {
+  .hero_img,
+  .hire_img {
     width: 50%;
   }
   .product_list {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 /*===================================== Media quiery End =======================================*/
